@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark Site</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div id="backdrop"></div>
+
+    <form class="form">
+      <h2 class="form-title">Add Site</h2>
+      <input type="text" placeholder="Name" autocomplete="off" name="name" />
+      <input type="text" placeholder="Website" autocomplete="off" name="site" />
+      <input type="submit" value="Add" />
+    </form>
+
+    <div class="container">
+      <div class="list">
+        <h3 class="list-title">Bookmarked Sites</h3>
+        <ul id="lists"></ul>
+      </div>
+
+      <button class="add-btn">Add</button>
+    </div>
+  </body>
+</html>

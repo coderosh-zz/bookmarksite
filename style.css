@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Verdana, sans-serif;
+  background: rgb(8, 199, 157);
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.form {
+  background: rgb(126, 15, 52);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  width: 75%;
+  max-width: 400px;
+  z-index: 20;
+  border-radius: 5px;
+  display: none;
+}
+
+.form-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  border: none;
+  margin-bottom: 5px;
+  background: rgb(99, 11, 37);
+  outline: none;
+  color: #fff;
+  font-family: Verdana, sans-serif;
+}
+
+input[type='submit']:hover {
+  background: rgb(22, 88, 100);
+  color: #fff;
+  cursor: pointer;
+}
+
+.display-form {
+  display: block;
+}
+
+.list {
+  padding: 20px 0px;
+}
+
+.list-title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+  background: rgb(37, 85, 92);
+  padding: 10px 0;
+  color: #fff;
+}
+
+.list-item {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(31, 34, 2);
+  margin-bottom: 5px;
+}
+
+.site-title {
+  flex: 10;
+  background: rgba(21, 80, 72, 0.555);
+  color: #fff;
+  padding: 10px;
+}
+
+.site-visit {
+  text-decoration: none;
+  flex: 2;
+  text-align: center;
+  padding: 10px;
+  background: rgb(13, 112, 96);
+  color: #fff;
+}
+
+.site-visit:hover {
+  background: rgb(128, 37, 37);
+  color: #fff;
+}
+
+.site-rm {
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: #666;
+  font-weight: 700;
+}
+
+.site-rm:hover {
+  color: rgb(131, 8, 8);
+}
+
+.add-btn {
+  width: 100%;
+  padding: 10px;
+  background: rgb(11, 104, 91);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.add-btn:hover {
+  background: rgb(168, 54, 46);
+}
+
+#backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  display: none;
+  background: rgba(0, 0, 0, 0.9);
+}
